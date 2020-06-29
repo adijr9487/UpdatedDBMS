@@ -1,0 +1,113 @@
+<%- include('header.ejs'); -%>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="CSS/userdashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <button class="navbar-toggler ml-auto mb-2 bg-light" type="button"
+            data-toggle="collapse" data-target="#myNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <div clas="container-fluid">
+                <div class="row">
+                    <!-- sidebar -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+                        <a href="/userdashboard" class="navbar-brand text-white d-block mx-auto text-center py-3 mb-4 bottom-border">Complaint <br>Management System</a>
+                        <div class="bottom-border pb-3">
+                            <img src="assets/user.jpg" width="50"
+                            class="rounded-circle mr-3">
+                            <a href="#" class="text-white"><%= data[0].first_name %> <%= data[0].last_name %></a>
+                        </div>
+                        <ul class="navbar-nav flex-column mt-4">
+                            <li class="nav-item"><a href="/userdashboard" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fa fa-book text-light fa-lg mr-3" aria-hidden="true"></i>Lodge-Complaint</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 current"><i class="fa fa-history text-light fa-lg mr-3" aria-hidden="true"></i>Complaint-History</a></li>
+                            <li class="nav-item"><a href="/userprofile" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fa fa-user text-light fa-lg mr-3" aria-hidden="true"></i>Profile</a></li>
+                        </ul>
+                    </div>
+                    <!-- top-nav -->
+                    <div class="col-lg-10 col-lg-9 col-md-8  ml-auto bg-dark fixed-top py-2 top-navbar">
+                        <div class="row align-items-center">
+                            <div class="offset-4 col-md-4">
+                                <h4 class="text-light text-uppercase mb-0">Dashboard</h4>
+                            </div>
+                            <div class="offset-1 col-md-3">
+                                <ul>
+                                    <li class="nav-item ml-md-auto" data-toggle="modal" data-target="#sign-out"><a href="#" classs="nav-link"><i class="fa fa-sign-out text-danger fa-lg" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of top-nav -->
+                    <!-- end of sidebar -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- modal -->
+    <div class="modal fade" id="sign-out">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Want to leave?</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Press logout to leave
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Stay Here</button>
+                    <a href="/logout"><button type="button" class="btn btn-danger">Logout</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of modal -->
+
+    <section>
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-12 col-lg-9 ml-auto">
+                    <div class="row pt-5 mt-3 mb-5">
+                        <h3>Complaint History</h3>
+                        <!-- <h3>Complaint History</h3> -->
+                        <div class="comp">
+                        <% for(var i=complains.length-1; i>=0; i--){ %>
+                            <div class="complain">
+                                <div class="value post"><%= complains[i].post_time %></div><br>
+                                
+                                <div class="label">Name : </div>
+                                    <div class="value"><%= complains[i].vic_name %></div><br>
+                                <div class="label">Date of Crime : </div>
+                                    <div class="value"><%= complains[i].date %></div><br>
+                                <div class="label">Time of Crime : </div>
+                                    <div class="value"><%= complains[i].time %></div><br>
+                                <div class="label">Nearest City : </div>
+                                    <div class="value"><%= complains[i].city %></div><br>    
+                                <div class="label">Address : </div>
+                                    <div class="value"><%= complains[i].address %></div><br>
+                                <div class="label">Type of Crime : </div>
+                                    <div class="value"><%= complains[i].type %></div><br>
+                                <div class="label">Contact Number : </div>
+                                    <div class="value"><%= complains[i].phone %></div><br>
+                                <div class="label">Description : </div>
+                                    <div class="value"><%= complains[i].description %></div><br>
+                                <div class="label">Status : </div>
+                                <div class="value">Pending</div>
+                            </div>
+                    <% } %>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<%- include('footer.ejs'); -%>

@@ -1,0 +1,380 @@
+<%- include('header.ejs'); -%>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Complaint Mangement System</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            <a class="navbar-brand mr-auto" href="#">Complaint Management System</a>
+            <div class="collapse  navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item "><a class="nav-link" href="/userslogin">User's login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/userregistration">User's Registration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/admin">Admin login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class ="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Complaint Management System</h1>
+                    <p>This portal is made for to register the complaint on online mode.</p>
+                </div>
+            </div>
+        </div>
+    </header>    
+    <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid"
+                                src="assets/Cyber-Crime2.jpg" alt="complaint">
+                        </div>
+                        <div class="carousel-item">
+                                <img class="d-block img-fluid"
+                                    src="assets/crime.png" alt="crime">
+                        </div>
+                        <div class="carousel-item">
+                                <img class="d-block img-fluid"
+                                    src="assets/cyber crime.jpg" alt="cybercrime">
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-2">
+                <h3>What is Complaint Management?</h3>
+                <p>The term complaint management describes the handling of customer complaints within a company.
+                  Criticism is supposed to be evaluated in a way that is systematic and orderly, and used to 
+                  create a positive impact. It is also supposed to resolve the issue that prompted the customer’s 
+                  criticism. The goal of complaint management is to strengthen customer loyalty as well as quality 
+                  assurance.
+                </p>
+                <h3>How to Registered a Complaint?</h3>
+                <p>Now, the question is how to get started? So, at the top of your page you will able to see the 
+                    three links. The first link is 'User's Login', the next link is 'User's Registration' and the 
+                    last link is 'Admin login'. So what you have to do is simply click on the User's Registration
+                    link and fill the form and then login in to the website.There you see the dashboard of your profile.
+                    In which a link is provided as Complaint register, click on that link and fill the form. That's it.
+                    You will get the status of your complaint.
+                </p>
+                <h3 style="color:green">Description About Different Types of Crime:</h3><br>
+
+                <h4>Antisocial Behaviour</h4>
+                <p>
+                    Antisocial behaviour is when you feel intimidated or distressed by a person's behaviour towards you.
+                </p>
+
+
+                <h4>Arson</h4>
+                <p>
+                    Arson is the willful and malicious burning or charring of another person’s property or
+                    structure.
+                </p>
+
+
+                <h4>Assault and Battery</h4>
+                <p>Assault refers to the intentional creation of a reasonable apprehension of harm. In other words, 
+                    assault is a situation in which one person causes another person to fear being harmed. Assault and battery 
+                    are most commonly considered two distinct personal crimes, although many states do merge the two crimes into
+                    the one crime known as “assault and battery.”
+                    Battery refers to the unauthorized application of force against another person’s body. This results in offensive touching, or actual physical injury. As some jurisdictions define assault as attempted but failed battery, battery charges are commonly grouped with assault to form the single charge of assault and battery.
+                </p>
+
+
+                <h4>Burglary</h4>
+                <p>
+                    A burglary is when someone breaks into a building with the intention of stealing,
+                    hurting someone or committing unlawful damage.
+                </p>
+
+
+                <h4>Childhood Abuse</h4>
+                <p>
+                    Child abuse can happen in different ways, and can include neglect as well as physical,
+                    emotional and sexual abuse.
+                </p>
+
+                <h4>Crime abroad</h4>
+                <p>
+                    Crime abroad covers any criminal offence that happens to you while outside England and Wales.
+                    This page also includes information about crime on cruise ships.
+                </p>
+
+
+                <h4>Cyber Crime</h4>
+                <p>
+                    The term cyber crime refers to a variety of crimes carried out online.
+                </p>
+
+
+                <h4>False Imprisonment</h4>
+                <p>
+                    False imprisonment refers to one person forcibly restraining another person, against their will,
+                    with a risk of being seriously injured or killed. Any person who intentionally restricts
+                    another person’s freedom or movement, without their consent, may be liable for false 
+                    imprisonment.
+                </p>
+
+
+                <h4>False Pretenses</h4>
+                <p>
+                    False pretenses refers to a combination of fraud and larceny, in which a person misrepresents
+                    in order to obtain the property of another.
+                </p>
+
+
+                <h4>Homicide</h4>
+                <p>Homicide includes crimes such as first and second degree murder, involuntary manslaughter,
+                   and vehicular homicide.
+                </p>
+
+
+                <h4>Kidnapping</h4>
+                <p>Kidnapping is defined as the carrying away or confinement of a person by force or deception,
+                   without that person’s consent. In other words, kidnapping is the seizure and detention of a
+                   person without their consent, while intending to carry away the person at a later time, hold the
+                   person for ransom, etc.
+                </p>
+
+
+                <h4>Rape</h4>
+                <p>
+                    Rape also includes statutory rape and sexual assault.
+                </p>
+
+
+                <h4>Receipt of Stolen Goods</h4>
+                <p>
+                    It is a crime to receive or purchase property that you know or believe to be stolen,
+                    or otherwise obtained through theft.
+                </p>
+
+
+                <h4>Robbery</h4>
+                <p>
+                    A robbery is when someone takes something from you with violence or threats – usually
+                    (but not always) in the street or another public place.
+                </p>
+
+
+                <h4>Sexual Harassment</h4>
+                <p>
+                    Sexual harassment is any kind of unwanted behaviour of a sexual nature that makes you feel 
+                    humiliated or intimidated, or that creates a hostile environment.
+                </p>
+
+
+                <h4>Terrorism</h4>
+                <p>
+                    Terrorist attacks are sudden and unpredictable and generally calculated to create a climate of 
+                    fear or terror among the public.A terror attack can lead to an ongoing feeling of insecurity.
+                </p>
+
+
+                <h4>Theft</h4>
+                <p>
+                    Larceny refers to a type of theft in which a person takes another person’s property
+                    and carries it away, with the intent to permanently deprive the legal owner of their property.
+                    Robbery is known as theft by force, and may also be considered a personal crime as it often
+                    results in physical and mental harm. Burglary occurs when a person breaks and enters into a
+                    home or building, intending to commit a crime. This crime is generally theft, although
+                    assault or arson may also constitute burglary;
+                </p>
+
+
+                <h4>Violent Crime</h4>
+                <p>
+                    A violent crime is when someone physically hurts or threatens to hurt someone, and also includes 
+                    crimes where a weapon is used.
+                </p>
+
+
+                <h4>White Collar Crimes</h4>
+                <p>
+                    Embezzlement refers to a type of white collar crime in which a person entrusted with the
+                    finances of another person or business illegally takes that money for their own personal use.
+                    Forgery is another example of a white collar property crime, because it is the creation,
+                    alteration, forging, or imitation of any document with the intent to defraud another person
+                    of their property;
+                </p><br><br>
+            </div>
+        </div>
+    </div>
+    
+<%- include('footer.ejs'); -%>
+
+
+
+
+<!-- INSERT INTO `branch_table` (`id`, `branch_name`, `branch_code`, `branch_city`, `branch_add`) 
+
+VALUES (NULL, 'branch_2', 'brch0002', 'Delhi', 'any address which is close to Delhi City for ease');
+VALUES (NULL, 'branch_3', 'brch0003', 'Delhi', 'any address which is close to Delhi City for ease');
+VALUES (NULL, 'branch_4', 'brch0004', 'Delhi', 'any address which is close to Delhi City for ease');
+VALUES (NULL, 'branch_5', 'brch0005', 'Delhi', 'any address which is close to Delhi City for ease');
+VALUES (NULL, 'branch_6', 'brch0006', 'Delhi', 'any address which is close to Delhi City for ease');
+VALUES (NULL, 'branch_7', 'brch0007', 'Delhi', 'any address which is close to Delhi City for ease');
+VALUES (NULL, 'branch_8', 'brch0008', 'Delhi', 'any address which is close to Delhi City for ease');
+VALUES (NULL, 'branch_9', 'brch0009', 'Delhi', 'any address which is close to Delhi City for ease');
+VALUES (NULL, 'branch_10', 'brch00010', 'Delhi', 'any address which is close to Delhi City for ease');
+VALUES (NULL, 'branch_11', 'brch00011', 'Delhi', 'any address which is close to Delhi City for ease');
+VALUES (NULL, 'branch_12', 'brch00012', 'Delhi', 'any address which is close to Delhi City for ease');
+VALUES (NULL, 'branch_13', 'brch00013', 'Delhi', 'any address which is close to Delhi City for ease');
+VALUES (NULL, 'branch_14', 'brch00014', 'Delhi', 'any address which is close to Delhi City for ease');
+
+
+INSERT INTO `branch_table` (`id`, `branch_name`, `branch_code`, `branch_city`, `branch_add`) 
+VALUES
+ (NULL, 'branch_1', 'brch0001',  'Mumbai', 'any address which is close to Mumbai City for ease')
+ (NULL, 'branch_2', 'brch0002',  'Delhi', 'any address which is close to Delhi City for ease'),
+ (NULL, 'branch_3', 'brch0003',  'Bangalore', 'any address which is close to Bangalore City for ease'),
+ (NULL, 'branch_4', 'brch0004',  'Hyderabad', 'any address which is close to Hyderabad City for ease'),
+ (NULL, 'branch_5', 'brch0005',  'Ahmedabad', 'any address which is close to Ahmedabad City for ease'),
+ (NULL, 'branch_6', 'brch0006',  'Chennai', 'any address which is close to Chennai City for ease'),
+ (NULL, 'branch_7', 'brch0007',  'Kolkata', 'any address which is close to Kolkata City for ease'),
+ (NULL, 'branch_8', 'brch0008',  'Surat', 'any address which is close to Surat City for ease'),
+ (NULL, 'branch_9', 'brch0009',  'Pune', 'any address which is close to Pune City for ease'),
+(NULL, 'branch_10', 'brch00010', 'Jaipur', 'any address which is close to Jaipur City for ease'),
+(NULL, 'branch_11', 'brch00011', 'Kanpur', 'any address which is close to Kanpur City for ease'),
+(NULL, 'branch_12', 'brch00012', 'Nagpur', 'any address which is close to Nagpur City for ease'),
+(NULL, 'branch_13', 'brch00013', 'Lucknow', 'any address which is close to Lucknow City for ease'),
+(NULL, 'branch_14', 'brch00014', 'Visakhapatn', 'any address which is close to Visakhapatn City for ease'),
+(NULL, 'branch_15', 'brch00015', 'Thane', 'any address which is close to Thane City for ease'),
+(NULL, 'branch_16', 'brch00016', 'Bhopal', 'any address which is close to Bhopal City for ease'),
+(NULL, 'branch_17', 'brch00017', 'Indore', 'any address which is close to Indore City for ease'),
+(NULL, 'branch_18', 'brch00018', 'PimpriChin', 'any address which is close to Pimpri-Chin City for ease'),
+(NULL, 'branch_19', 'brch00019', 'Patna', 'any address which is close to Patna City for ease'),
+(NULL, 'branch_20', 'brch00020', 'Vadodara', 'any address which is close to Vadodara City for ease'),
+(NULL, 'branch_21', 'brch00021', 'Ghaziabad', 'any address which is close to Ghaziabad City for ease'),
+(NULL, 'branch_22', 'brch00022', 'Ludhiana', 'any address which is close to Ludhiana City for ease'),
+(NULL, 'branch_23', 'brch00023', 'Agra', 'any address which is close to Agra City for ease'),
+(NULL, 'branch_24', 'brch00024', 'Nashik', 'any address which is close to Nashik City for ease'),
+(NULL, 'branch_25', 'brch00025', 'Faridabad', 'any address which is close to Faridabad City for ease'),
+(NULL, 'branch_26', 'brch00026', 'Meerut', 'any address which is close to Meerut City for ease'),
+(NULL, 'branch_27', 'brch00027', 'Rajkot', 'any address which is close to Rajkot City for ease'),
+(NULL, 'branch_28', 'brch00028', 'Kalyan-Domb', 'any address which is close to Kalyan-Domb City for ease'),
+(NULL, 'branch_29', 'brch00029', 'Vasai-Virar', 'any address which is close to Vasai-Virar City for ease'),
+(NULL, 'branch_30', 'brch00030', 'Varanasi', 'any address which is close to Varanasi City for ease'),
+(NULL, 'branch_31', 'brch00031', 'Srinagar', 'any address which is close to Srinagar City for ease'),
+(NULL, 'branch_32', 'brch00032', 'Aurangabad', 'any address which is close to Aurangabad City for ease'),
+(NULL, 'branch_33', 'brch00033', 'Dhanbad', 'any address which is close to Dhanbad City for ease'),
+(NULL, 'branch_34', 'brch00034', 'Amritsar', 'any address which is close to Amritsar City for ease');-->
+
+
+<!-- INSERT INTO `managers_table` (`id`, `name`, `address`, `phone`, `password`) 
+VALUES 
+ (6, 'Manager_11234', 'address near his branch area', '1234567890', '1234567890'),
+ (7, 'Manager_11235', 'address near his branch area', '1234567891', '1234567891'),
+ (8, 'Manager_11236', 'address near his branch area', '1234567892', '1234567892'),
+ (9, 'Manager_11237', 'address near his branch area', '1234567893', '1234567893'),
+ (10, 'Manager_11238', 'address near his branch area', '1234567894', '1234567894'),
+ (11, 'Manager_11239', 'address near his branch area', '1234567895', '1234567895'),
+ (12, 'Manager_11240', 'address near his branch area', '1234567896', '1234567896'),
+ (13, 'Manager_11241', 'address near his branch area', '1234567897', '1234567897'),
+ (14, 'Manager_11242', 'address near his branch area', '1234567898', '1234567898'),
+ (15, 'Manager_11243', 'address near his branch area', '1234567899', '1234567899'),
+ (16, 'Manager_11244', 'address near his branch area', '1234567900', '1234567900'),
+ (17, 'Manager_11245', 'address near his branch area', '1234567901', '1234567901'),
+ (18, 'Manager_11246', 'address near his branch area', '1234567902', '1234567902'),
+ (19, 'Manager_11247', 'address near his branch area', '1234567903', '1234567903'),
+ (20, 'Manager_11248', 'address near his branch area', '1234567904', '1234567904'),
+ (21, 'Manager_11249', 'address near his branch area', '1234567905', '1234567905'),
+ (22, 'Manager_11250', 'address near his branch area', '1234567906', '1234567906'),
+ (23, 'Manager_11251', 'address near his branch area', '1234567907', '1234567907'),
+ (24, 'Manager_11252', 'address near his branch area', '1234567908', '1234567908'),
+ (25, 'Manager_11253', 'address near his branch area', '1234567909', '1234567909'),
+ (26, 'Manager_11254', 'address near his branch area', '1234567910', '1234567910'),
+ (27, 'Manager_11255', 'address near his branch area', '1234567911', '1234567911'),
+ (28, 'Manager_11256', 'address near his branch area', '1234567912', '1234567912'),
+ (29, 'Manager_11257', 'address near his branch area', '1234567913', '1234567913'),
+ (30, 'Manager_11258', 'address near his branch area', '1234567914', '1234567914'),
+ (31, 'Manager_11259', 'address near his branch area', '1234567915', '1234567915'),
+ (32, 'Manager_11260', 'address near his branch area', '1234567916', '1234567916'),
+ (33, 'Manager_11261', 'address near his branch area', '1234567917', '1234567917'),
+ (34, 'Manager_11262', 'address near his branch area', '1234567918', '1234567918'),
+ (35, 'Manager_11263', 'address near his branch area', '1234567919', '1234567919'),
+ (36, 'Manager_11264', 'address near his branch area', '1234567920', '1234567920'),
+ (37, 'Manager_11265', 'address near his branch area', '1234567921', '1234567921'),
+ (38, 'Manager_11266', 'address near his branch area', '1234567922', '1234567922'),
+ (39, 'Manager_11267', 'address near his branch area', '1234567923', '1234567923');
+
+ INSERT INTO `man_bra` (`manager_id`, `branch_id`) 
+ VALUES
+ ('1', '43'),
+ ('2', '44'),
+ ('3', '45'),
+ ('4', '46'),
+ ('5', '47'),
+ ('6', '48'),
+ ('7', '49'),
+ ('8', '50'),
+ ('9', '51'),
+ ('10', '52'),
+ ('11', '53'),
+ ('12', '54'),
+ ('13', '55'),
+ ('14', '56'),
+ ('15', '57'),
+ ('16', '58'),
+ ('17', '59'),
+ ('18', '60'),
+ ('19', '61'),
+ ('20', '62'),
+ ('21', '63'),
+ ('22', '64'),
+ ('23', '65'),
+ ('24', '66'),
+ ('25', '67'),
+ ('26', '68'),
+ ('27', '69'),
+ ('28', '70'),
+ ('29', '71'),
+ ('30', '72'),
+ ('31', '73'),
+ ('32', '74'),
+ ('33', '75'),
+ ('34', '76'); -->
+<!-- 
+INSERT INTO `coustomer_table` (`Id`, `email`, `phone`, `first_name`, `last_name`, `password`) VALUES 
+(NULL, 'munson@hotmail.com', '7555463929', 'Estella', 'Stein', 'ebUYmhNF'),
+(NULL, 'tbmaddux@icloud.com', '9055573178', 'Jeannette', 'Schmucker', '6GvT5DDC'),
+(NULL, 'yzheng@hotmail.com', '7555997853', 'Patrica', 'Mazzoni', 'ZAzRB72k'),
+(NULL, 'vganesh@outlook.com', '9955591590', 'Darwin', 'Vanasse', 'tmsVgK5L'),
+(NULL, 'qmacro@sbcglobal.net', '9355508809', 'Eula', 'Ascencio', 'FsXcA9cg'),
+(NULL, 'rsteiner@att.net', '9855592097', 'Whitney', 'Linares', '9TH7HKZ7'),
+(NULL, 'mrobshaw@live.com', '9255530251', 'Carli', 'Alvord', 'Q5x6wkCq'),
+(NULL, 'mschilli@live.com', '9255511205', 'Toshiko', 'Lack', 'rjxjWtxa'),
+(NULL, 'lushe@verizon.net', '9555551387', 'Isabel', 'Gibson', 'aG3A6Bt5'),
+(NULL, 'dsowsy@sbcglobal.net', '8555610108', 'Carissa', 'Mandelbaum', 'Rkhn2D2g'),
+(NULL, 'jbryan@outlook.com', '7555107839', 'Jana', 'Sholar', 'mStLG2ws'),
+(NULL, 'sartak@yahoo.ca', '8555585580', 'Evelin', 'Secrest', 'qAXf2u5t'),
+(NULL, 'malvar@live.com', '9855506669', 'Shanika', 'Leader', 'GK4UAVrZ'),
+(NULL, 'fukuchi@hotmail.com', '7555637187', 'Ozella', 'Mcclinton', 'eqXWdqNC'),
+(NULL, 'stevelim@mac.com', '9755578697', 'Isaias', 'Brickhouse', '7LMLJtpb'),
+(NULL, 'jipsen@msn.com', '9755535219', 'Janay', 'Demello', 'aVTZhDb9'),
+(NULL, 'szymansk@yahoo.ca', '9255564257', 'Tessie', 'Obregon', 'uJw8LGLc'),
+(NULL, 'zwood@verizon.net', '8555309671', 'Virgilio', 'Villines', 'JAS5cZpt'),
+(NULL, 'sartak@yahoo.com', '8555311479', 'Fumiko', 'Gail', 'bET7M6EF'),
+(NULL, 'hampton@yahoo.ca', '9355522227', 'Brandon', 'Blust', 'ppPD5sfS'); -->
